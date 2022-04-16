@@ -11,7 +11,7 @@ public class Calculator {
     BinaryOperator<Integer> devide = (x, y) -> x / y;
 
     UnaryOperator<Integer> pow = x -> x * x;
-    UnaryOperator<Integer> abs = x -> x > 0 ? x : (x == 0 ? 0 : x * -1);
+    UnaryOperator<Integer> abs = x -> x > 0 ? x : x * -1; // не увидел ошибки, при х=5 вернет 5, при х=0 вернет 0, при х=-5 вернет 5
 
     Predicate<Integer> isPositive = x -> x > 0;
 

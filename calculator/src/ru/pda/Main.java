@@ -11,5 +11,9 @@ public class Main {
         int c = calc.devide.apply(a, b); // ошибка деления на 0 (a = 3, b = 0, c = 3/0 ошибка)
 
         calc.println.accept(c);
+
+        int x = calc.abs.apply(-5);
+
+        calc.println.accept(x);
     }
 }
